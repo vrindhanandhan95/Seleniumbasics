@@ -8,13 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-
-
-
-
 public class dropdownBox {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\vrind\\chromedriver.exe");
@@ -54,7 +50,15 @@ public class dropdownBox {
 		dep.selectByIndex(1);
 		dep.selectByValue("3");
 		
+		//Without using select
 		
+		List<WebElement> ele5=driver.findElements(By.xpath("//*[@id='dropdown3']/option"));	
+
+		for (WebElement c : ele5) {
+			if(c.getText().contains("Appium")) {
+				c.click();
+			}
+		}
 		
 
 	}

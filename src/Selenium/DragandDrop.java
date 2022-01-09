@@ -25,6 +25,7 @@ public class DragandDrop {
 		//action.clickAndHold(from).moveToElement(to).release().build().perform();
 		action.dragAndDrop(from, to).build().perform();
 		
+		//action.click(from);
 
 	}
 

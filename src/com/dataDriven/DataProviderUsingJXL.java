@@ -16,7 +16,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-public class DataProviderTest {
+public class DataProviderUsingJXL {
 	WebDriver driver;
 	
 	@DataProvider(name= "testData")
